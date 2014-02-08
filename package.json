@@ -1,0 +1,21 @@
+{
+  "name": "buble my search",
+  "version": "0.0.1",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.2",
+    "jade": "*",
+    "solr-client": "*",
+    "hashmap": "*",
+    "async": "*",
+    "request":  "*",
+    "JSONStream": "0.7.1",
+    "event-stream": "3.0.16",
+    "sync": "*"
+  },
+  "author": "besson"
+}

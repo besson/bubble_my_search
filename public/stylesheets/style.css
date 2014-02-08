@@ -1,0 +1,15 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.search-keys {
+  width: 200px;
+  height:0px
+}

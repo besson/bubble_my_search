@@ -1,0 +1,12 @@
+extends layout
+
+block content
+      div.navbar.navbar-inverse.navbar-fixed-top
+        div.inner
+          div.navbar-inner
+            div.container
+            a(id="search",href="#",class="brand") Bubble my search
+
+      div(id="search-options", class="search-keys")
+      form(id="search-form", action="/search", method="POST")
+        input(id="keywords", name="keywords", type="hidden")

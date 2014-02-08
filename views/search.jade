@@ -1,0 +1,18 @@
+extends layout-search
+
+block content
+      div.navbar.navbar-inverse.navbar-fixed-top
+        div.inner
+          div.navbar-inner
+            div.container
+            a(id="search",href="/",class="brand") Bubble again
+
+      #search-results
+        h2 Your results:
+        - results.forEach(function(value, key) {
+          p(class="label label-info") #{key}
+          ul
+            - value.forEach(function(result) {
+              li #{result.name}
+            - });
+        - });
