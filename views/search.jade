@@ -10,9 +10,11 @@ block content
       #search-results
         h2 Your results:
         - results.forEach(function(value, key) {
-          p(class="label label-info") #{key}
+          p(class="label label-info") #{value.name}
           ul
-            - value.forEach(function(result) {
-              li #{result.name}
-            - });
+            li code: #{key}
+            li income level: #{value.incomeLevel.value}
+            li capital: #{value.capitalCity}
+            li longitude: #{value.longitude}
+            li latitude: #{value.latitude}
         - });
