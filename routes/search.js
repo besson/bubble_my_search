@@ -1,5 +1,4 @@
 var HashMap = require("hashmap").HashMap;
-var map = new HashMap();
 var async = require("async");
 var request = require("request")
 var http = require("http")
@@ -9,6 +8,7 @@ var es = require("event-stream")
 exports.go = function(req, res){
   var keywords = (req.body.keywords).split(",");
   var searches = 0;
+  var map = new HashMap();
 
   async.each(keywords,
     function(entry, e ) {
@@ -29,6 +29,7 @@ exports.go = function(req, res){
        }
 
         if (searches == keywords.length) {
+          keywords = ""
           res.render("search", { title: "results", results: map });
         }
 

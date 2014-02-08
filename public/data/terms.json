@@ -90,7 +90,6 @@
   {"label": "LBY", "size": 615.4623, "cluster": "MEA"},
   {"label": "LCA", "size": 18.087, "cluster": "LCN"},
   {"label": "LCN", "size": 60856.5574, "cluster": "NA"},
-  {"label": "LDC", "size": 87819.3577, "cluster": "NA"},
   {"label": "LIC", "size": 84645.4901, "cluster": "NA"},
   {"label": "LIE", "size": 3.6656, "cluster": "ECS"},
   {"label": "LKA", "size": 2032.8, "cluster": "SAS"},

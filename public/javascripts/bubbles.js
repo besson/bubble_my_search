@@ -147,6 +147,8 @@ function collide(alpha) {
 }
 
   d3.select("#search").on("click", function(e) {
+    $("#keywords").val("");
+
     var keyWords = "";
      d3.select("#search-options").selectAll("p").each(function(d,i){
        keyWords = keyWords + this.innerText + ",";
